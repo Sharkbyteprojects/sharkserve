@@ -1,6 +1,6 @@
 # How to:
 ### Install
-- Make an file and name it `sharkserve.js`
+- Make an file and name it `sharkserve.js` and write in it `require("sharkserve");`
 - run `npm init -y`
 - run `npm i sharkserve`
 
