@@ -1,0 +1,11 @@
+{
+	"activ":true,
+	"hash":[
+		{"filename":"fund.js", "sha":"d9509ef2b8c31ce226ed54b2c903fc54419b49869f21478177c9fe1c2c43f227"},
+		{"filename":"serve.js", "sha":"7228e8ba901015240f3ce549ddfb9baa20ea52183ff043a95d14189cac82d90e"},
+		{"filename":"input.output/output.js", "sha":"91ff30e131cae2a32cb31fbb30b0fc2c1bfe55557c6305ba17b9275b80468f51"},
+		{"sha":"17cd4c001e5917337f9a2a0cbae48c9223d69a7bf0b0361d3fcd42d6cc2e837c","filename":"../index.js"},
+		{"sha":"b33bc5a6d36fdee97f01ca2787ddd920f0fcb0470e74568bb73ae1114f505674","filename":"../LICENSE"},
+		{"sha":"9ad7e316c54dfee4952178f5e3d4b520c3a1b7d39d93df9090b9b3560ea36793", "filename":"verify.js"}
+	]
+}

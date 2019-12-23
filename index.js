@@ -1,4 +1,4 @@
-const modules={"repsh": require("repshark"),"emo":require("node-emoji"),"chalk":require("chalk"),"http":require("http"),"fs":require("fs"),"fund":require("./module/fund.js"),"serve": require("./module/serve.js"), "output": require("./module/input.output/output.js"), "noutput":(ent)=>{require("./module/input.output/output.js")(false, ent)}};
+const modules={"verify": require("./module/verify.js"),"repsh": require("repshark"),"emo":require("node-emoji"),"chalk":require("chalk"),"http":require("http"),"fs":require("fs"),"fund":require("./module/fund.js"),"serve": require("./module/serve.js"), "output": require("./module/input.output/output.js"), "noutput":(ent)=>{require("./module/input.output/output.js")(false, ent)}};
 /**
  * Standard Settings:
  *    --port=8080
@@ -14,6 +14,9 @@ modules.fs.readFile(__dirname+"/settings.json",'utf8',(err,data)=>{
 	if(datas.clear){
 		console.clear();
 	}
+	 modules.noutput(modules.chalk.underline.bold.red(modules.emo.emojify(":coffee:  SharkServe Prepare"))+"\n");
+modules.verify(modules.chalk, modules.output);
+
 	modules.noutput(modules.chalk.underline.bold.red(modules.emo.emojify(":coffee:  SharkServe Starting"))+"\n");
 	modules.noutput(modules.chalk.underline.yellow("Settings:")+"\n");
 const port =modules.fund("port",datas.port)
