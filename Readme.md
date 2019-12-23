@@ -1,10 +1,14 @@
 # How to:
-- Install
-- `npm i -g sharkserve`
+### Install
+- Make an file and name it `sharkserve.js`
+- run `npm init -y`
+- run `npm i sharkserve`
+
+### Use
 - Serve dir /home/ from port 8081:
-- `sharkserve --port=8081 --dir=/home`
+- `node sharkserve --port=8081 --dir=/home`
 - Standard settings: dir . port 8080
-- `sharkserve`
+- `node sharkserve`
 
 
 ---

@@ -5,11 +5,16 @@ modules.noutput(modules.chalk.red(modules.emo.emojify(":coffee:  SharkServe Star
  *    --port=8080
  *    --dir=.
  */
-modules.noutput(modules.chalk.yellow("Settings:")+"\n");
-const port =modules.fund("port",8080)
+var datas;
+modules.fs.readFile(__dirname+"/settings.json",'utf8',(err,data)=>{
+	datas=JSON.parse(data);
+	modules.noutput(modules.chalk.yellow("Settings:")+"\n");
+const port =modules.fund("port",datas.port)
 const portint=parseInt(port);
 modules.noutput("\t"+modules.chalk.yellow("port:"+port)+"\n");
-const dir=modules.fund("dir",".")
+const dir=modules.fund("dir",datas.dir)
 modules.noutput("\t"+modules.chalk.yellow("dir:"+dir)+"\n");
 modules.serve(portint,dir,modules.fs,modules.output, modules.http,modules.nof, modules.chalk,modules.emo,modules.repsh)
+
+});
 module.exports=()=>{}
