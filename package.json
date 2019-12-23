@@ -1,0 +1,23 @@
+{
+  "name": "sharkserve",
+  "version": "1.0.0",
+  "description": "Serve your files for test",
+  "main":"bin/index.js",
+  "bin": {
+    "sharkserve": "index.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "lite",
+    "server",
+    "test"
+  ],
+  "author": "Sharkbyteprojects",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "node-emoji": "^1.10.0"
+  }
+}
