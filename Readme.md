@@ -5,3 +5,9 @@
 - `sharkserve --port=8081 --dir=/home`
 - Standard settings: dir . port 8080
 - `sharkserve`
+
+
+---
+## New Features:
+
+Write in an Index.html `${server}`. When you call the site, the server replce this with his version.
