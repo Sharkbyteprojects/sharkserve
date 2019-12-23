@@ -10,8 +10,7 @@
 - Standard settings: dir . port 8080
 - `node sharkserve`
 
+## Changelog
 
----
-## New Features:
-
-Write in an Index.html `${server}`. When you call the site, the server replace this with his version.
+`version": "1.2.0"`
+ADD BIN READ
