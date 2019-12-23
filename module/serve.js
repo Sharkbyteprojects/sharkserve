@@ -1,6 +1,8 @@
-module.exports=(port,dir,fs,output,http,nof,chalk,emo,repsh)=>{
+module.exports=(port,dir,fs,output,http,nof,chalk,emo,repsh,lhos,datalis,htmllocker)=>{
     http.createServer((req,res)=>{
+        const isok=isallowed(req,lhos,datalis);
         const parts=req.url.split("?")[0];
+        if(isok){
         output(false,chalk.bold.yellow("User called "+req.url)+"\n");
             fs.readFile(dir+parts+"index.html"/*,'utf8'*/,(err,data)=>{
                 if(err){
@@ -10,6 +12,11 @@ module.exports=(port,dir,fs,output,http,nof,chalk,emo,repsh)=>{
                     res.end(data);
                 }
             });
+        }else{
+        	output(true,chalk.bold.red("403 Forbidden User called "+req.url+"\n\tIP: "+req.connection.remoteAddress)+"\n");
+        	res.statusCode=403;
+        	res.end(htmllocker);
+        }
     }).listen(port,()=>{
         output(false,chalk.bold.blue("Server listen on http://localhost:"+port)+"\n");
     });
@@ -25,4 +32,16 @@ function filer(res,dir,fs,output,nof,chalk,parts,repsh){
             res.end(data);
         }
     });
+}
+function isallowed(req,manag,dsli){
+	var returns=true;
+	if(manag){
+	const allowed=req.connection.remoteAddress;
+    if(dsli.includes(allowed)){
+    	returns=true;
+    }else{
+    	returns=false;
+    }
+    }
+    return returns;
 }

@@ -3,6 +3,7 @@ const modules={"repsh": require("repshark"),"emo":require("node-emoji"),"chalk":
  * Standard Settings:
  *    --port=8080
  *    --dir=.
+ *    --lhost=0
  */
 var datas;
 modules.fs.readFile(__dirname+"/settings.json",'utf8',(err,data)=>{
@@ -20,7 +21,15 @@ const portint=parseInt(port);
 modules.noutput("\t"+modules.chalk.yellow("port:"+port)+"\n");
 const dir=modules.fund("dir",datas.dir)
 modules.noutput("\t"+modules.chalk.yellow("dir:"+dir)+"\n");
-modules.serve(portint,dir,modules.fs,modules.output, modules.http,datas.nof, modules.chalk,modules.emo,modules.repsh);
+var onlymode=parseInt(modules.fund("lhost",datas.iplocker.act));
+if(onlymode==1){
+modules.noutput("\t"+modules.chalk.yellow("lhost only:"+"true")+"\n");
+onlymode=true;
+}else{
+modules.noutput("\t"+modules.chalk.yellow("lhost only:"+"false")+"\n");
+onlymode=false;
+}
+modules.serve(portint,dir,modules.fs,modules.output, modules.http,datas.nof, modules.chalk,modules.emo,modules.repsh,onlymode,datas.iplocker.localhost,datas.iplocker.html);
 
 });
 module.exports=()=>{}
