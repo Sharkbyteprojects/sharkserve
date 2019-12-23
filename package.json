@@ -1,6 +1,6 @@
 {
   "name": "sharkserve",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Serve your files for test",
   "main": "index.js",
   "keywords": [
@@ -8,6 +8,10 @@
     "server",
     "test"
   ],
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/Sharkbyteprojects/sharkserve.git"
+  },
   "author": "Sharkbyteprojects",
   "license": "ISC",
   "dependencies": {
