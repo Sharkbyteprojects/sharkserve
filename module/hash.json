@@ -2,10 +2,11 @@
 	"activ":true,
 	"hash":[
 		{"filename":"fund.js", "sha":"e6b959d595c1495fc2787e373a26710d1cd94508d1b186262338d6820585323b"},
-		{"filename":"serve.js", "sha":"16ed0fb47aa0f76d6307282534ff6a15245d63f584d350e48b27b9832c3b6e1a"},
+		{"filename":"serve.js", "sha":"dc11e33f6790d9675fb12b6622ca160439a43f8520b3222bd5673d7e2b99e592"},
 		{"filename":"input.output/output.js", "sha":"0c3066ad2ded066dd9d80c72f4803d2ba8e9625b8a613880c3d86c0bc4618f76"},
-		{"sha":"724816916707a211a135351c95e6dbd65b6785169fb9a7cacb31de03e45929be","filename":"../index.js"},
+		{"sha":"56865082ef83444ebc711441ce018a0a4f9c4900968a2379d6b113be60803288","filename":"../index.js"},
 		{"sha":"a28ec34ae02b5bac93cce715defd90f9d752aaf97ddfc7901d478b42d4e475bc","filename":"../LICENSE"},
-		{"sha":"75159c1237087786db2eff5df3ad5dc7ce6cb586de71fc2f14be44a9e75157ff", "filename":"verify.js"}
+		{"sha":"75159c1237087786db2eff5df3ad5dc7ce6cb586de71fc2f14be44a9e75157ff", "filename":"verify.js"},
+		{"sha":"f9f26ac7a88136bd63b42a670c883295ac3adef173a1d968a6be0d4f313fa652", "filename": "reloader.browser.js"}
 	]
 }

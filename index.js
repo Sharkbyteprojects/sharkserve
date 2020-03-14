@@ -32,7 +32,15 @@ onlymode=true;
 modules.noutput("\t"+modules.chalk.yellow("lhost only:"+"false")+"\n");
 onlymode=false;
 }
-modules.serve(portint,dir,modules.fs,modules.output, modules.http,datas.nof, modules.chalk,modules.emo,modules.repsh,onlymode,datas.iplocker.localhost,datas.iplocker.html);
+var ar=parseInt(modules.fund("autoreload",datas.reload));
+if(ar==1){
+modules.noutput("\t"+modules.chalk.yellow("autoreload:"+"true")+"\n");
+ar=true;
+}else{
+modules.noutput("\t"+modules.chalk.yellow("autoreload:"+"false")+"\n");
+ar=false;
+}
+modules.serve(portint,dir,modules.fs,modules.output, modules.http,datas.nof, modules.chalk,modules.emo,modules.repsh,onlymode,datas.iplocker.localhost,datas.iplocker.html,ar);
 
 });
 module.exports=()=>{}

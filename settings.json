@@ -1,5 +1,6 @@
 {
 	"clear": true,
+	"reload":1,
 	"port":8080,
 	"dir": ".",
 	"nof": {

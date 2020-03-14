@@ -8,7 +8,7 @@
     "server",
     "test"
   ],
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/Sharkbyteprojects/sharkserve.git"
   },
@@ -17,6 +17,7 @@
   "dependencies": {
     "chalk": "^3.0.0",
     "node-emoji": "^1.10.0",
-    "repshark": "^1.0.1"
+    "repshark": "^1.0.1",
+    "socket.io": "^2.3.0"
   }
 }

@@ -10,6 +10,7 @@
 - Standard settings: dir . port 8080
 - `node sharkserve`
 - Localhost Only Mode: add the option `--lhost=1`
+- Disable autoreload: add the option `--autoreload=0`
 
 ## Changelog
 
