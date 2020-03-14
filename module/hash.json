@@ -1,11 +1,11 @@
 {
 	"activ":true,
 	"hash":[
-		{"filename":"fund.js", "sha":"d9509ef2b8c31ce226ed54b2c903fc54419b49869f21478177c9fe1c2c43f227"},
-		{"filename":"serve.js", "sha":"7228e8ba901015240f3ce549ddfb9baa20ea52183ff043a95d14189cac82d90e"},
-		{"filename":"input.output/output.js", "sha":"91ff30e131cae2a32cb31fbb30b0fc2c1bfe55557c6305ba17b9275b80468f51"},
-		{"sha":"17cd4c001e5917337f9a2a0cbae48c9223d69a7bf0b0361d3fcd42d6cc2e837c","filename":"../index.js"},
-		{"sha":"b33bc5a6d36fdee97f01ca2787ddd920f0fcb0470e74568bb73ae1114f505674","filename":"../LICENSE"},
-		{"sha":"9ad7e316c54dfee4952178f5e3d4b520c3a1b7d39d93df9090b9b3560ea36793", "filename":"verify.js"}
+		{"filename":"fund.js", "sha":"e6b959d595c1495fc2787e373a26710d1cd94508d1b186262338d6820585323b"},
+		{"filename":"serve.js", "sha":"16ed0fb47aa0f76d6307282534ff6a15245d63f584d350e48b27b9832c3b6e1a"},
+		{"filename":"input.output/output.js", "sha":"0c3066ad2ded066dd9d80c72f4803d2ba8e9625b8a613880c3d86c0bc4618f76"},
+		{"sha":"724816916707a211a135351c95e6dbd65b6785169fb9a7cacb31de03e45929be","filename":"../index.js"},
+		{"sha":"a28ec34ae02b5bac93cce715defd90f9d752aaf97ddfc7901d478b42d4e475bc","filename":"../LICENSE"},
+		{"sha":"75159c1237087786db2eff5df3ad5dc7ce6cb586de71fc2f14be44a9e75157ff", "filename":"verify.js"}
 	]
 }

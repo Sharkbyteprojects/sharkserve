@@ -5,7 +5,7 @@ module.exports=(ch,out)=>{
 	        datas=JSON.parse(fs.readFileSync(__dirname+"/hash.json","utf8"));
         if(datas.activ){
         datas.hash.forEach((item,index)=>{
-      const hash = crypto.createHmac('sha256', fs.readFileSync(__dirname+"/"+item.filename/*,'utf8'*/)).digest('hex');
+      const hash = crypto.createHash('sha256').update(fs.readFileSync(__dirname+"/"+item.filename)).digest('hex');
       if(hash==item.sha){
       	out(false, ch.bold.green("File Verified: "+"module/"+item.filename+"\n"));   
       }else{

@@ -1,6 +1,6 @@
 {
   "name": "sharkserve",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Serve your files for test",
   "main": "index.js",
   "keywords": [
