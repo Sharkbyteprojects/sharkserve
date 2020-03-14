@@ -18,7 +18,7 @@ const srt=http.createServer((req,res)=>{
                     output(true, chalk.bold.green("200 File "+dir+parts+"index.html respond!")+"\n");
                     let dats=data;
                     if(ar){
-                        dats=dats.replace("</body>","<script src=\"/reloader.js/reloader.js\"></script></body>");
+                        dats=dats.replace("</head>","<script src=\"/reloader.js/reloader.js\"></script></head>");
                     }
                     res.end(dats);
                 }
@@ -47,7 +47,7 @@ function filer(res,dir,fs,output,nof,chalk,parts,repsh){
         if(err){
             output(true, chalk.bold.red("404 File "+dir+parts+" doesn't exist!")+"\n");
             res.statusCode=404;
-            res.end(repsh(nof.html,nof.sea, parts));
+            res.end(repsh(repsh(nof.html,nof.sea, parts), "</head>","<script src=\"/reloader.js/reloader.js\"></script></head>"));
         }else{
             output(true, chalk.bold.green("200 File "+dir+parts+" respond!")+"\n");
             res.end(data);
