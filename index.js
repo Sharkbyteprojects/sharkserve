@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const modules={"verify": require("./module/verify.js"),"repsh": require("repshark"),"emo":require("node-emoji"),"chalk":require("chalk"),"http":require("http"),"fs":require("fs"),"fund":require("./module/fund.js"),"serve": require("./module/serve.js"), "output": require("./module/input.output/output.js"), "noutput":(ent)=>{require("./module/input.output/output.js")(false, ent)}};
 /**
  * Standard Settings:
