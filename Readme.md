@@ -1,14 +1,12 @@
 # How to:
 ### Install
-- Make an file and name it `sharkserve.js` and write in it `require("sharkserve");`
-- run `npm init -y`
-- run `npm i sharkserve`
+- run `npm i -g sharkserve`
 
 ### Use
 - Serve dir /home/ from port 8081:
-- `node sharkserve --port=8081 --dir=/home`
+- `sharkserve --port=8081 --dir=/home`
 - Standard settings: dir . port 8080
-- `node sharkserve`
+- `sharkserve`
 - Localhost Only Mode: add the option `--lhost=1`
 - Disable autoreload: add the option `--autoreload=0`
 
