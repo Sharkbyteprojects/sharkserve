@@ -11,9 +11,11 @@
 - Disable autoreload: add the option `--autoreload=0`
 
 ## Changelog
-
-- `version: 1.2.1` Add Lhost Only Mode
-- `version": "1.2.0"` ADD BIN READ
+Version	| Description
+--------|--------------------
+`1.2.1`	| Add Lhost Only Mode
+`1.2.0`	| ADD BIN READ
+`1.3.9` | Runnable via `sharkserve`
 
 ## For Advanced users:
 You can permanently change the settings, 404 site and more by changing the settings.json in the downloaded folder `node_modules/sharkserve/settings.json`
